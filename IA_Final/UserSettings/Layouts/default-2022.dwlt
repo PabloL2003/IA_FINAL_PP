@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 42
+  controlID: 48
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 43
+  controlID: 49
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 44
+  controlID: 50
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 45
+  controlID: 51
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -300,8 +300,8 @@ MonoBehaviour:
     y: 0
     width: 493
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -448,20 +448,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a4590000
-      m_LastClickedID: 22948
-      m_ExpandedIDs: 388fffff18f5ffff12fbffff2efbffff30fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 50c1ffffa6c2ffff3ee5ffff64e6ffffb66a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: polySurface3
-        m_OriginalName: polySurface3
+        m_Name: Waypoint (6)
+        m_OriginalName: Waypoint (6)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -79200
+        m_UserData: 27296
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -947,9 +947,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 27.115976, y: -5.9639935, z: 9.650905}
+    m_Target: {x: 4.536611, y: 3.2815454, z: 5.591506}
     speed: 2
-    m_Value: {x: 27.115976, y: -5.9639935, z: 9.650905}
+    m_Value: {x: 4.536611, y: 3.2815454, z: 5.591506}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -995,13 +995,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.13203621, y: 0.65311164, z: -0.116884954, w: 0.73612595}
+    m_Target: {x: -0.016507547, y: 0.97234386, z: -0.0733844, w: -0.22006093}
     speed: 2
-    m_Value: {x: 0.13317187, y: 0.65308857, z: -0.11789157, w: 0.7360993}
+    m_Value: {x: -0.016621452, y: 0.97223765, z: -0.07337654, w: -0.22157048}
   m_Size:
-    m_Target: 13.4519615
+    m_Target: 0.4235111
     speed: 2
-    m_Value: 12.87269
+    m_Value: 0.4235111
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1169,7 +1169,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/modelos/cartoon-chicken/source
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1177,16 +1177,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/modelos/cartoon-chicken/source
+  - Assets/Scripts
   m_LastFoldersGridSize: 56
   m_LastProjectPath: C:\Users\pablo\OneDrive\Documentos\IA_FINAL_PP\IA_Final
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 48}
-    m_SelectedIDs: 80610000
-    m_LastClickedID: 24960
-    m_ExpandedIDs: 0000000040610000566100007c6100008061000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 89}
+    m_SelectedIDs: 961e0000
+    m_LastClickedID: 7830
+    m_ExpandedIDs: 000000009a1e0000a61e0000c26c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1214,7 +1214,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000040610000
+    m_ExpandedIDs: 00000000c26c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
