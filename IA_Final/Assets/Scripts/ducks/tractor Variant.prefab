@@ -213,6 +213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56f317da1ff94cc4191b4f96a3cfb2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 4891156152566461118}
   rotationx: 0
   rotationy: 0

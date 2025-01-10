@@ -17,7 +17,10 @@ public class DuckSpawner : MonoBehaviour
             Vector3 spawnPosition = transform.position + Random.insideUnitSphere * spawnRadius;
             spawnPosition.y = transform.position.y; // Keep ducks on the same height as the spawner
 
-            Instantiate(duckPrefab, spawnPosition, Quaternion.identity);
+            GameObject Duck = Instantiate(duckPrefab, spawnPosition, Quaternion.identity);
+            DuckAI duckAI = Duck.GetComponent<DuckAI>();
+            duckAI.player = player; // Assign the player to each zombie
         }
+
     }
 }
