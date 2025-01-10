@@ -21,11 +21,11 @@ public class MoveCamera : MonoBehaviour
             {
                 movement += Vector3.back; // Move backward
             }
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.RightArrow))
             {
                 movement += Vector3.left; // Move left
             }
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.LeftArrow))
             {
                 movement += Vector3.right; // Move right
             }
