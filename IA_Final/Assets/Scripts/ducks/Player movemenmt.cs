@@ -13,21 +13,7 @@ public class Playermovemenmt : MonoBehaviour
 
     public void PlayerMovement()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.position += transform.forward * 0.01f;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position -= transform.forward * 0.01f;
-        } if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += transform.right * 0.01f;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position -= transform.right * 0.01f;
-        }
+       
 
     }
 
