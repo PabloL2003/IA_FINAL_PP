@@ -9,16 +9,31 @@ public class MoveCamera : MonoBehaviour
 
     void Update()
     {
-        // Get input from keyboard
-        float horizontal = Input.GetAxis("Horizontal"); // A/D or Left/Right Arrow
-        float vertical = Input.GetAxis("Vertical"); // W/S or Up/Down Arrow
 
-        // Create a movement vector
-        Vector3 movement = new Vector3(horizontal, 0, vertical) * moveSpeed * Time.deltaTime;
+            Vector3 movement = Vector3.zero;
 
-        // Move the camera
-        transform.Translate(movement);
+            // Check for arrow key presses
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                movement += Vector3.forward; // Move forward
+            }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                movement += Vector3.back; // Move backward
+            }
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                movement += Vector3.left; // Move left
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                movement += Vector3.right; // Move right
+            }
 
+            // Move the camera based on input
+            transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);
+        
+        
         // Adjust the height with Z and X
         if (Input.GetKey(KeyCode.Z))
         {
