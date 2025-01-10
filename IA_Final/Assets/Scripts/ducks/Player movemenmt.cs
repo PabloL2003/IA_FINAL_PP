@@ -31,24 +31,6 @@ public class Playermovemenmt : MonoBehaviour
 
     }
 
-    public void CameraRotation()
-    {
-        float lookspeed = 3;
-        float mousex = Input.GetAxis("Mouse X");
-        float mousey = Input.GetAxis("Mouse Y");
-
-        mousex = mousex * lookspeed;
-        mousey = mousey * lookspeed;
-
-        rotationx -= mousey;
-        rotationy = Mathf.Clamp(rotationx,-50,50);
-        cam.transform.localRotation = Quaternion.Euler(rotationx, 0, 0);
-        transform.Rotate(Vector3.up * mousex);
-
-
-
-    }
-
 
     void Start()
     {
@@ -59,6 +41,6 @@ public class Playermovemenmt : MonoBehaviour
     void Update()
     {
         PlayerMovement();
-        CameraRotation();
+        
     }
 }
