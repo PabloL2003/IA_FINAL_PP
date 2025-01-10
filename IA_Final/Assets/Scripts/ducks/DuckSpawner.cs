@@ -21,6 +21,5 @@ public class DuckSpawner : MonoBehaviour
             DuckAI duckAI = Duck.GetComponent<DuckAI>();
             duckAI.player = player; // Assign the player to each zombie
         }
-
     }
 }
