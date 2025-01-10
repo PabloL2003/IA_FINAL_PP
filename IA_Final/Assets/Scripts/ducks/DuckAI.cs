@@ -23,8 +23,7 @@ public class DuckAI : MonoBehaviour
         {
             // Perform vision check to detect the player within the frustum
             DetectPlayer();
-            MoveAwayFromPlayer();
-            Debug.Log("Player Detected: ");
+            //MoveAwayFromPlayer();
 
         }
     }
