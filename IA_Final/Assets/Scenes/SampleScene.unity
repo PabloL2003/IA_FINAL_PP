@@ -319,8 +319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a2771ef6a2a28468c2e71e1455f838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rotSpeed: 100
 --- !u!114 &68691118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 1620836542}
-  numFish: 10
+  numFish: 15
   allFish: []
   swimLimits: {x: 1.2, y: 0.1, z: 1.2}
   goalPos: {x: 0, y: 0, z: 0}
