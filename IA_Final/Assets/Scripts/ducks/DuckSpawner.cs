@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class DuckSpawner : MonoBehaviour
 {
-    public GameObject duckPrefab;     // Reference to the zombie prefab
+    public GameObject duckPrefab;     // Reference to the duck prefab
     public Transform player;            // Reference to the player
-    public int DuckCount = 10;        // Number of zombies to spawn
-    public float spawnRadius = 10f;     // Radius around the spawner where zombies will be placed
+    public int duckCount = 10;         // Number of ducks to spawn
+    public float spawnRadius = 5f;      // Radius around the spawner where ducks will be placed
 
     void Start()
     {
-        for (int i = 0; i < DuckCount; i++)
+        for (int i = 0; i < duckCount; i++)
         {
-            // Spawn each zombie at a random position around the spawner
+            // Spawn each duck at a random position within the radius
             Vector3 spawnPosition = transform.position + Random.insideUnitSphere * spawnRadius;
-            spawnPosition.y = 2; // Ensure zombies are on the ground
+            spawnPosition.y = transform.position.y; // Keep ducks on the same height as the spawner
 
-            GameObject zombie = Instantiate(duckPrefab, spawnPosition, Quaternion.identity);
-            ZombieAI zombieAI = zombie.GetComponent<ZombieAI>();
-            zombieAI.player = player; // Assign the player to each zombie
+            Instantiate(duckPrefab, spawnPosition, Quaternion.identity);
         }
     }
 }
