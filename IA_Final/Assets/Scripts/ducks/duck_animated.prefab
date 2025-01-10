@@ -175,7 +175,7 @@ MonoBehaviour:
   frustum: {fileID: 2293322214215738925}
   mask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   player: {fileID: 3826146658987427026, guid: 9f94c8e65e2e3184b86f93336e03cd1c, type: 3}
   moveSpeed: 2
 --- !u!20 &2293322214215738925

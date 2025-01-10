@@ -14,7 +14,7 @@ public class DuckAI : MonoBehaviour
 
     void Update()
     {
-        if (playerDetected)
+        if (playerDetected == true)
         {
             // Move away from the player if any duck has detected the player
             MoveAwayFromPlayer();
@@ -23,7 +23,7 @@ public class DuckAI : MonoBehaviour
         {
             // Perform vision check to detect the player within the frustum
             DetectPlayer();
-            //MoveAwayFromPlayer();
+            
 
         }
     }
@@ -32,10 +32,10 @@ public class DuckAI : MonoBehaviour
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, frustum.farClipPlane, mask);
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(frustum);
-
+       
         foreach (Collider col in colliders)
         {
-            if (col.gameObject == player.gameObject && GeometryUtility.TestPlanesAABB(planes, col.bounds))
+            if (col.gameObject == player.gameObject)
             {
                 RaycastHit hit;
                 Ray ray = new Ray(transform.position, (player.position - transform.position).normalized);
@@ -45,7 +45,10 @@ public class DuckAI : MonoBehaviour
                 {
                     if (hit.collider.gameObject == player.gameObject)
                     {
+                        Debug.Log("Detecting player");
+                        
                         playerDetected = true; // Set static flag to signal all ducks
+                        MoveAwayFromPlayer();
                         break;
                     }
                 }
