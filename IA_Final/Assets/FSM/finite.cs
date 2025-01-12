@@ -36,6 +36,11 @@ public class finite : MonoBehaviour
             {
                 isWaiting = false;
                 timeElapsed = 0f; // Reset wander timer to resume wandering
+
+                if (targetObject != null)
+                {
+                    targetObject.gameObject.SetActive(true);
+                }
             }
         }
         else if (isMovingToTarget && targetObject != null)
